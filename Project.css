@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+ }
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: relative;
+  }
+  
+  .navbar-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .navbar-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar-logo span{
+      color:#ffe100
+  }
+  
+  .navbar-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navbar-menu li {
+    margin-left: 20px;
+  }
+  
+  .navbar-menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+    }
+    
+    .navbar-menu li {
+      margin: 0;
+    }
+    
+    .navbar-menu li:first-child {
+      margin-top: 10px;
+    }
+    
+    .navbar-toggle {
+      display: block; 
+    }
+  }
+
+
+h1 {
+	
+	color: #333;
+	text-align: center;
+	padding: 20px;
+    font-size: 36px;
+	margin: 0;
+}
+
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 40px;
+}
+
+.project {
+	flex-basis: calc(33.33% - 20px);
+	margin: 20px;
+	background-color: #f9f9f9;
+	padding: 20px;
+	text-align: center;
+}
+
+.project img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #ffe100;
+	color:#333;
+    font-size: large;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.btn:hover {
+	background-color: #666;
+}
+
+@media (max-width: 768px) {
+	main {
+		flex-direction: column;
+		margin: 20px;
+	}
+	
+	.project {
+		flex-basis: 100%;
+		margin: 20px 0;
+	}
+}
